@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 import settings
 import paho.mqtt.publish as publish
 import time
