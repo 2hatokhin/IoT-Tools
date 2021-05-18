@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-import settings
+from settings import settings
 import paho.mqtt.publish as publish
 import time
 import random
