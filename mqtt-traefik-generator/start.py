@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import settings
 import paho.mqtt.publish as publish
 import time
@@ -27,4 +29,3 @@ while True:
                    payload=payload,
                    keepalive=15)
     time.sleep(1)
-

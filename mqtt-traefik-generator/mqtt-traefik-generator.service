@@ -1,0 +1,13 @@
+[Unit]
+Description=Simplified mqtt trafik generator
+After=syslog.target
+
+[Service]
+WorkingDirectory=/home/pi/git/IoT-Tools/mqtt-traefik-generator
+ExecStart=/home/pi/git/IoT-Tools/mqtt-traefik-generator/start.py
+StandardOutput=journal
+StandardError=journal
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
