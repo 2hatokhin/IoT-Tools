@@ -26,10 +26,12 @@ const updateStatusCircle = (value) => {
     ? statusCircle.classList.add("alert-circle")
     : statusCircle.classList.remove("alert-circle");
 
-
+  value < 50
+      ? statusCircle.classList.add("regular-circle")
+      : statusCircle.classList.remove("regular-circle");
   statusCircle.innerText = value;
 };
 
 createStatusCircle();
 
-updateStatusCircle(100);
+updateStatusCircle(49);
